@@ -208,15 +208,15 @@ if (typeof designsData === "undefined") {
         "One Click article for the Nilwala Chronicle, monthly newsletter of Leo Club of Matara Nilwala",
       tools: ["Photoshop"],
     },
-    {
-      id: 6,
-      title: "E-commerce Website Concept",
-      category: "ui",
-      image: "https://via.placeholder.com/800x600?text=Website+UI",
-      description:
-        "A modern e-commerce website design concept with a focus on product presentation and streamlined checkout process.",
-      tools: ["Figma", "Adobe XD"],
-    },
+    // {
+    //   id: 6,
+    //   title: "E-commerce Website Concept",
+    //   category: "ui",
+    //   image: "https://via.placeholder.com/800x600?text=Website+UI",
+    //   description:
+    //     "A modern e-commerce website design concept with a focus on product presentation and streamlined checkout process.",
+    //   tools: ["Figma", "Adobe XD"],
+    // },
   ]
 }
 
