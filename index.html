@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="icon" href="assets/favicon.ico" sizes="32x32">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <a href="#" class="logo">Chalitha</a>
+      
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#designs" class="nav-link">Designs</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        
+        <a href="assets/Chalitha_CV.pdf" download class="btn btn-outline">Resume</a>
+      </nav>
+      
+      <!-- Mobile Menu Button -->
+      <div class="mobile-menu-container">
+        <button class="theme-toggle mobile" aria-label="Toggle theme">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="menu-icon"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="close-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+      <div class="container">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#designs" class="nav-link">Designs</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#" class="btn btn-outline mobile-resume">Resume</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+      <div class="blob-orbit orbit-1">
+        <div class="blob blob-1"></div>
+      </div>
+      <div class="blob-orbit orbit-2">
+        <div class="blob blob-2"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text animate-in">
+            <h1 class="hero-title">Hi, I'm <span class="text-primary">Chalitha Gunarathna</span></h1>
+            <h2 class="hero-subtitle">
+              <span id="typing-wrapper">
+                <span id="typing-text"></span>
+                <span id="typing-placeholder" aria-hidden="true"></span>
+                <span class="cursor"></span>
+              </span>
+            </h2>
+            <p class="hero-description">Passionate about blending clean design with usability to create experiences people enjoy using.</p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn btn-primary">Get In Touch</a>
+              <a href="#projects" class="btn btn-outline">View Projects</a>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/ChalithaGunarathna" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/chalitha-gunarathna-2001r/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="mailto:chalithagunarathna.design@gmail.com" class="social-link" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="assets/HeroSection.png" alt="Profile"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About <span class="text-primary">Me</span></h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="assets/AboutMe.png" alt="About me"/>
+          </div>
+          <div class="about-text">
+            <p>I’m a passionate and detail-oriented Computer Science undergraduate with a strong interest in UI/UX design, graphic design, and front-end development.</p>
+            <p>I enjoy transforming ideas into functional and visually appealing digital experiences that are intuitive and user-friendly.</p>
+              Whether it’s crafting clean interfaces, designing engaging visuals, or building responsive web applications, I bring a creative mindset and technical skillset to every project. 
+              I’m always eager to learn new tools and techniques, and I thrive in collaborative environments where I can contribute meaningfully and grow as a designer-developer.</p>
+            <a href="#contact" class="btn btn-primary">Let's Work Together</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">My <span class="text-primary">Projects</span></h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/projects/Schoolify.png" alt="Project 1" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Schoolify Website</h3>
+              <p class="project-description">A resource management system for schools.</p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">Tailwind</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/Team-Schoolify/SDGP-Schoolify" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  Code
+                </a>
+                <a href="https://schoolify-nine.vercel.app" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/projects/Portfolio.png" alt="Project 2" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Portfolio</h3>
+              <p class="project-description">Personal Portfolio</p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  Code
+                </a>
+                <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-card">
+            <div class="project-image">
+              <img src="assets/projects/Plane Ticket Booking.jpg" alt="Project 3" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Plane Ticket Booking System</h3>
+              <p class="project-description">A plane ticket booking system</p>
+              <div class="project-tags">
+                <span class="tag">Java</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ChalithaGunarathna/plane-management-java" class="btn btn-sm btn-outline" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0
+ 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  Code
+                </a>
+                <!-- <a href="#" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Demo
+                </a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="https://github.com/ChalithaGunarathna" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+            View More on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Showcase Section -->
+    <section id="designs" class="designs">
+      <div class="container">
+        <h2 class="section-title">My <span class="text-primary">Design Work</span></h2>
+        
+        <!-- Design Tabs -->
+        <div class="tabs">
+          <div class="design-tabs-wrapper">
+            <div class="design-tabs">
+              <button class="tab-btn active" data-category="all">All Designs</button>
+              <button class="tab-btn" data-category="flyer">Flyers</button>
+              <button class="tab-btn" data-category="article">Article Designs</button>
+              <!-- <button class="tab-btn" data-category="ui">UI/UX</button> -->
+            </div>
+          </div>
+          
+          <div class="designs-grid">
+            <!-- Design 1 -->
+            <div class="design-card" data-category="flyer">
+              <div class="design-image">
+                <img src="assets/flyers/CX-005.jpg" alt="CodeSprint X Phase Reveal Flyer" />
+                <div class="design-overlay">
+                  <button class="btn btn-secondary view-design" data-id="1">View Details</button>
+                </div>
+              </div>
+              <div class="design-content">
+                <h3 class="design-title">CodeSprint X Phase Reveal Flyer</h3>
+                <div class="design-tags">
+                  <span class="tag">Photoshop</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Design 2 -->
+            <div class="design-card" data-category="flyer">
+              <div class="design-image">
+                <img src="assets/flyers/CX-007.png" alt="CodeSpring X Website Launch Flyer" />
+                <div class="design-overlay">
+                  <button class="btn btn-secondary view-design" data-id="2">View Details</button>
+                </div>
+              </div>
+              <div class="design-content">
+                <h3 class="design-title">CodeSpring X Website Launch Flyer</h3>
+                <div class="design-tags">
+                  <span class="tag">Photoshop</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Design 3 -->
+            <div class="design-card" data-category="article">
+              <div class="design-image">
+                <img src="assets/article/Editor's Note.png" alt="Editor's Note" />
+                <div class="design-overlay">
+                  <button class="btn btn-secondary view-design" data-id="3">View Details</button>
+                </div>
+              </div>
+              <div class="design-content">
+                <h3 class="design-title">Editor's Note for the Nilwala Chronicle Article</h3>
+                <div class="design-tags">
+                  <span class="tag">Photoshop</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Design 4 -->
+            <div class="design-card" data-category="article">
+              <div class="design-image">
+                <img src="assets/article/Leos of the Month (Haritha).png" alt="Leos of the Month" />
+                <div class="design-overlay">
+                  <button class="btn btn-secondary view-design" data-id="4">View Details</button>
+                </div>
+              </div>
+              <div class="design-content">
+                <h3 class="design-title">Leos of the Month</h3>
+                <div class="design-tags">
+                  <span class="tag">Photoshop</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Design 5 -->
+            <div class="design-card" data-category="article">
+              <div class="design-image">
+                <img src="assets/article/One Click.png" alt="One Click" />
+                <div class="design-overlay">
+                  <button class="btn btn-secondary view-design" data-id="5">View Details</button>
+                </div>
+              </div>
+              <div class="design-content">
+                <h3 class="design-title">One Click</h3>
+                <div class="design-tags">
+                  <span class="tag">Photoshop</span>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Design 6 -->
+            <!-- <div class="design-card" data-category="ui">
+              <div class="design-image">
+                <img src="https://via.placeholder.com/400x300?text=Website+UI" alt="E-commerce Website Concept" />
+                <div class="design-overlay">
+                  <button class="btn btn-secondary view-design" data-id="6">View Details</button>
+                </div>
+              </div>
+              <div class="design-content">
+                <h3 class="design-title">E-commerce Website Concept</h3>
+                <div class="design-tags">
+                  <span class="tag">Figma</span>
+                  <span class="tag">Adobe XD</span>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Modal -->
+    <div class="modal" id="design-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Design Title</h3>
+          <button class="modal-close" aria-label="Close modal">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-image">
+            <img src="https://via.placeholder.com/600x400" alt="Design" id="modal-image" />
+          </div>
+          <div class="modal-description">
+            <p id="modal-description"></p>
+            <div class="modal-tags">
+              <h4>Tools Used:</h4>
+              <div id="modal-tools" class="design-tags"></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-outline btn-icon modal-prev" aria-label="Previous design">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <span class="modal-counter">1 of 6</span>
+          <button class="btn btn-outline btn-icon modal-next" aria-label="Next design">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <h2 class="section-title">My <span class="text-primary">Skills</span></h2>
+        <div class="skills-grid">
+          <!-- Frontend Skills -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 class="skill-title">Frontend</h3>
+            <ul class="skill-list">
+              <li>React / Next.js</li>
+              <li>Javascript</li>
+              <li>Tailwind CSS</li>
+              <li>HTML / CSS</li>
+            </ul>
+          </div>
+          
+          <!-- Backend Skills -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+            </div>
+            <h3 class="skill-title">Backend</h3>
+            <ul class="skill-list">
+              <li>Java</li>
+              <li>Python</li>
+              <li>Next.js</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </div>
+          
+          <!-- Other Skills -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3 class="skill-title">Other</h3>
+            <ul class="skill-list">
+              <li>Git / GitHub</li>
+              <li>CI/CD</li>
+              <li>Docker</li>
+              <li>Vercel</li>
+            </ul>
+          </div>
+          
+          <!-- Tools -->
+          <div class="skill-card">
+            <div class="skill-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+            </div>
+            <h3 class="skill-title">Tools</h3>
+            <ul class="skill-list">
+              <li>VS Code</li>
+              <li>Figma</li>
+              <li>Premier Pro / After Effects</li>
+              <li>Photoshop / Lightroom</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Get In <span class="text-primary">Touch</span></h2>
+        <div class="contact-container">
+          <div class="contact-form-container">
+            <form class="contact-form" action="https://formspree.io/f/xyzewoan" method="POST">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <p>Prefer to connect directly?</p>
+            <div class="social-links">
+              <a href="https://github.com/ChalithaGunarathna" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/chalitha-gunarathna-2001r/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="mailto:chalithagunarathna.design@gmail.com" class="social-link" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="copyright">© <span id="current-year"></span> Chalitha Gunarathna. All rights reserved.</p>
+        <div class="social-links">
+          <a href="https://github.com/ChalithaGunarathna" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/chalitha-gunarathna-2001r/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="mailto:chalithagunarathna.design@gmail.com" class="social-link" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>
