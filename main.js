@@ -200,6 +200,7 @@ if (typeof designsData === "undefined") {
     },
     {
       id: 5,
+      id: 5,
       title: "Leos of the Month",
       category: "article",
       image: "assets/article/Leos of the Month (Haritha).png",
@@ -208,6 +209,7 @@ if (typeof designsData === "undefined") {
       tools: ["Photoshop"],
     },
     {
+      id: 6,
       id: 6,
       title: "One Click",
       category: "article",
