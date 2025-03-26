@@ -183,6 +183,15 @@ if (typeof designsData === "undefined") {
     },
     {
       id: 3,
+      title: "CodeSpring X Prize Pool Reveal Flyer",
+      category: "flyer",
+      image: "assets/flyers/CX-007.png",
+      description:
+      "A futuristic launch poster announcing the prize pool of CodeSprint X, showcasing the stunning trophies and rewards for the winners of the competition.",
+      tools: ["Photoshop"],
+    },
+    {
+      id: 4,
       title: "Editor's Note for the Nilwala Chronicle Article",
       category: "article",
       image: "assets/article/Editor's Note.png",
@@ -191,7 +200,7 @@ if (typeof designsData === "undefined") {
       tools: ["Photoshop"],
     },
     {
-      id: 4,
+      id: 5,
       title: "Leos of the Month",
       category: "article",
       image: "assets/article/Leos of the Month (Haritha).png",
@@ -200,7 +209,7 @@ if (typeof designsData === "undefined") {
       tools: ["Photoshop"],
     },
     {
-      id: 5,
+      id: 6,
       title: "One Click",
       category: "article",
       image: "assets/article/One Click.png",
