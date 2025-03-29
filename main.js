@@ -25,7 +25,7 @@ let isTyping = true
 let typingIndex = 0
 let currentTextIndex = 0
 let typingTimeout
-const texts = ["Graphic Designer", "UI/UX Designer", "Frontend Developer", "Photographer"]
+const texts = ["UI/UX Designer", "Graphic Designer", "Frontend Developer", "Photographer"]
 
 // Set current year in footer
 if (currentYearEl) {
@@ -216,6 +216,15 @@ if (typeof designsData === "undefined") {
         "One Click article for the Nilwala Chronicle, monthly newsletter of Leo Club of Matara Nilwala",
       tools: ["Photoshop"],
     },
+    {
+      id: 7,
+      title: "CodeSprint X Slots Filling Flyer",
+      category: "flyers",
+      image: "assets/flyers/CX-012.png",
+      description:
+        "A futuristic poster announcing that the registration slots of CodeSprint X are filling soon.",
+      tools: ["Photoshop"],
+    }
     // {
     //   id: 6,
     //   title: "E-commerce Website Concept",
