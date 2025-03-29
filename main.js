@@ -25,7 +25,7 @@ let isTyping = true
 let typingIndex = 0
 let currentTextIndex = 0
 let typingTimeout
-const texts = ["UI/UX Designer", "Graphic Designer", "Frontend Developer", "Backend Developer", "Photographer"]
+const texts = ["UI/UX Designer", "Graphic Designer", "Frontend Developer", "Photographer"]
 
 // Set current year in footer
 if (currentYearEl) {
